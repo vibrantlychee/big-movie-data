@@ -13,8 +13,16 @@ filepath = "raw-data/movie_ids_" + DATE + ".json"
 with open(filepath) as f:
     export_list = pd.read_json(f, lines=True)
 
-# get list of valid movie IDs (~686k)
-ls_of_ids = list(export_list["id"])
+# sort by popularity
+export_list.sort_values(by="popularity", ascending=False,inplace=True)
+
+# we restrict to 5000 most popular movies as the TMDB API slows down after ~5000 calls
+top_5000 = export_list[0:5000]
+# random sample should contain mostly movies that you have heard of
+# print(top_5000.sample(10))
+
+# get list of movie IDs
+ls_of_ids = list(top_5000["id"])
 
 # request all metadata, credits data, and keyword data for every movie in ls_of_ids
 all_data = get_movies_long(ls_of_ids)

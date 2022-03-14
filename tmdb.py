@@ -5,8 +5,8 @@ import pandas as pd
 import numpy as np
 
 # Authentication details
-API_KEY_V3 = "?api_key=5508d6f139fd30407092694bbf4d30e0"
-API_READ_ACCESS_TOKEN_V4 = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NTA4ZDZmMTM5ZmQzMDQwNzA5MjY5NGJiZjRkMzBlMCIsInN1YiI6IjYyMmU5NTU3YWFkOWMyMDAxYjUxYmI0NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.zFrzJTzxtjxPVJ_2S31iuKyLQpC08aAaGkjNJYQvOZA"
+API_KEY_V3 = "?api_key=a7a2e525605101bd1d5d5ebb64f9baa1"
+API_READ_ACCESS_TOKEN_V4 = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhN2EyZTUyNTYwNTEwMWJkMWQ1ZDVlYmI2NGY5YmFhMSIsInN1YiI6IjYyMmY0MjI0OThmMWYxMDA3ODA4NzkzYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.YWIfwRRCzEnpJN9bfnSyCRFhbf7l4qs3q3eoP5_yVHE"
 
 # api request structure
 sample_url = "https://api.themoviedb.org/3/movie/550?api_key=5508d6f139fd30407092694bbf4d30e0"
@@ -87,7 +87,7 @@ def get_movie_long(movie_id: int):
     # we make use of the append_to_response feature as described in docs
     # https://developers.themoviedb.org/3/getting-started/append-to-response
 
-    url = ROOT_URL_V3 + "/movie/" + str(movie_id) + API_KEY_V3 + "&append_to_response=credits,keywords"
+    url = ROOT_URL_V3 + "/movie/" + str(movie_id) + API_KEY_V3 + "&append_to_response=credits,keywords&language=en"
 
     r = requests.get(url)
 
