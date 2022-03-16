@@ -1,3 +1,5 @@
+import pandas as pd
+
 # to store methods to prepare data for running models
 
 # creates a flat dataframe based on any column
