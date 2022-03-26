@@ -1,4 +1,3 @@
-from matplotlib import lines
 from tmdb import get_movie, get_movies_long
 
 import pandas as pd
