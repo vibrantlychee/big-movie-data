@@ -1,6 +1,6 @@
 # big-movie-data
  
-💯  Can we predict if a film will flop before release? Are there unstoppable casts and crews that seem to make hit after hit (👀  Steven Spielberg)? Are there casts and crews who are costing studios hundreds of millions every year (👀  Will Smith)? 
+([Click me](https://vibrantlychee.notion.site/vibrantlychee/ac0a3d8e2bc14d4c8b8c120954551076?v=25bad09242d444bba85aa0fc53e2014e)) 💯  Can we predict if a film will flop before release? Are there unstoppable casts and crews that seem to make hit after hit (👀  Steven Spielberg)? Are there casts and crews who are costing studios hundreds of millions every year (👀  Will Smith)? 
 
 🤑  What might determine the financial success of a film? Can we predict the revenue of a film?
 
